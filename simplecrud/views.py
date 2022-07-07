@@ -34,3 +34,6 @@ def updatedata(request, id):
         formupdatedata.save()
         return redirect('/')
     return render(request,'editdata.html',{'updatedatanya':Crudsimple.objecs.get(id=id)})
+
+def lihatdata(request, id):
+    return render(request, "detail.html", {'lihatdatanya':Crudsimple.objects.get(id=id)})

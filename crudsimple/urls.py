@@ -24,5 +24,6 @@ urlpatterns = [
     path('simpandata',views.simpandata),
     path('hapusdata/<int:id>',views.hapusdata),
     path('editdata/<int:id>',views.editdata),
-    path('updatedata/<int:id>',views.updatedata)    
+    path('updatedata/<int:id>',views.updatedata),    
+    path('lihatdata/<int:id>',views.lihatdata) 
 ]
